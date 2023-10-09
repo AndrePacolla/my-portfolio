@@ -9,9 +9,8 @@
     color: white;
 }
 :root{
-    --primary-color:#0f0f0f;
+    --primary-color:black;
     --secund-black:#191919;
-
 
     --default-purple: #8039f1;
 }
@@ -63,10 +62,17 @@ li a{
     align-items: center;
     margin-top: 150px;
 }
-.banner-descripition{
+.banner-title{
     flex: 2;
 }
-
+.banner-title h1{
+    margin-top: -120px;
+    font-size: 40px;
+}
+.banner-title h3{
+    margin-top: 22px;
+    font-size: 17px;
+}
 
 .banner-bg{
     flex: 1;
@@ -77,8 +83,17 @@ li a{
 
 .about{
     width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--primary-color);
+}
+
+.about-img{
+    flex: 2;
+}
+.about-img img{
+  border-radius: 30px;
+  box-shadow: 1px 1px 35px 1px #8039f1;
+}
+
+.about-description{
+    flex: 1;
 }
