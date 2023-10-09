@@ -9,7 +9,7 @@
     color: white;
 }
 :root{
-    --primary-color:black;
+    --primary-color:rgb(0, 0, 0);
     --secund-black:#191919;
 
     --default-purple: #8039f1;
@@ -19,9 +19,11 @@ header{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    padding-top: 20px;
     background-color: var(--secund-black);
 }
 h2{
+    letter-spacing: 7px;
     font-size: 30px;
 }
 span{
@@ -52,7 +54,7 @@ li a{
     display: flex;
     max-width: 1440px;
     margin: 0px auto;
-    padding: 35px 50px;
+    padding: 22px 30px;
     justify-content: space-between;
 }
 
@@ -70,8 +72,9 @@ li a{
     font-size: 40px;
 }
 .banner-title h3{
-    margin-top: 22px;
-    font-size: 17px;
+    letter-spacing: 10px;
+    margin-top: 10px;
+    font-size: 15px;
 }
 
 .banner-bg{
@@ -83,17 +86,44 @@ li a{
 
 .about{
     width: 100vw;
+    padding: 100px;
     background-color: var(--primary-color);
 }
 
 .about-img{
-    flex: 2;
+    flex: 1;
 }
 .about-img img{
   border-radius: 30px;
-  box-shadow: 1px 1px 35px 1px #8039f1;
+  box-shadow: 1px 1px 35px 1px var(--default-purple);
+}
+.about-img img:hover{
+    transition:  1s ease-in-out;
+    scale: 1.05;
 }
 
 .about-description{
     flex: 1;
+}
+.about-description h1{
+    font-size: 53px;
+    letter-spacing: 3px;
+}
+.about-description p{
+   max-width: auto;
+   margin-top: 30px;
+   margin-bottom:150px;
+   text-align: justify;
+   line-height: 40px;
+}
+.about-description i{
+    font-weight: bold;
+}
+
+.about-description button{
+    font-family: 18px;
+    font-weight: bold;
+    padding: 10px 60px;
+    border-radius: 30px;
+    color: var(--secund-black);
 }
