@@ -11,9 +11,13 @@
 :root{
     --primary-black:#000;
     --secund-black:#111111;
-
+    
     --primary-white: #FFFF;
-    --default-purple: #8039f1;
+    --secund-white: #ffffffea;
+    
+    --primary-purple: #8039f1;
+    --secund-purple: #6d1af3;
+    --third-purple:#a01aee;
 }
 
 header{
@@ -26,18 +30,15 @@ header{
 }
 .portifolio{
     font-family: 'Russo One', sans-serif;
-    background: linear-gradient(150deg ,#b68df8,#6d1af3,#4802b8,#ae83f5);
+    background: linear-gradient(150deg ,#b68df8,#c81af3,#4802b8,#ae83f5);
     background-size: 400% 100%; 
     animation: deg 8s linear infinite alternate;
-
     font-family: 'Russo One', sans-serif;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-
 }
 .portifolio h2{
-    letter-spacing: 10px;
+    letter-spacing: 20px;
     font-size: 33px;
 }
 @keyframes deg {
@@ -49,27 +50,67 @@ header{
     }
 }
 span{
-    color: var(--default-purple);
+    color: var(--third-purple);
 }
-li{
+.btn{
+    position: relative;
     display: inline-block;
     margin-right: 20px;
     cursor: pointer;
-    font-size: 18px;
-    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Russo One', sans-serif;
+    padding: 5px 25px;
     border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid #6d1af3;
 }
-li:hover{
-    background-color: var(--default-purple);
-}
-ul:has(li:hover) li:not(:hover){
-    transition: .9s;
-    opacity: .3;
-    scale: .9;
+.btn a{
+    text-decoration: none;
 }
 
-li a{
-    text-decoration: none;
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 15px;
+    transition:  all .7s ease;
+    background-color: var(--secund-purple);
+}
+
+.btn1::before{
+    width: 0;
+}
+.btn1:hover::before{
+    width: 100%;
+}
+.btn2::before{
+    width: 0;
+}
+.btn2:hover::before{
+    width: 100%;
+}
+.btn3::before{
+    width: 0;
+}
+.btn3:hover::before{
+    width: 100%;
+}
+.btn4::before{
+    width: 0;
+}
+.btn4:hover::before{
+    width: 100%;
+}
+.btn5::before{
+    width: 0;
+}
+.btn5:hover::before{
+    width: 100%;
 }
 
 .container{
@@ -118,7 +159,7 @@ li a{
 }
 .about-img img{
   border-radius: 30px;
-  box-shadow: 1px 1px 35px 1px var(--default-purple);
+  box-shadow: 5px 13px 8px 3px var(--secund-purple);
 }
 .about-img img:hover{
     transition:  1s ease-in-out;
@@ -151,9 +192,7 @@ li a{
     border-radius: 30px;
     letter-spacing: 5px;
     color: var(--primary-white);
-
-
-    background: linear-gradient(150deg ,#b68df8,#6d1af3,#4802b8,#ae83f5);
+    background: linear-gradient(150deg ,#b68df8,#c81af3,#4802b8,#ae83f5);
     background-size: 400% 100%; 
     animation: deg 8s linear infinite alternate;
 }
