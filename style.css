@@ -58,12 +58,12 @@ span{
     margin-right: 20px;
     cursor: pointer;
     font-size: 14px;
-    font-family: 'Russo One', sans-serif;
     padding: 5px 25px;
     border-radius: 15px;
     overflow: hidden;
     z-index: 1;
     border: 2px solid #6d1af3;
+    font-family: 'Russo One', sans-serif;
 }
 .btn a{
     text-decoration: none;
@@ -72,8 +72,6 @@ span{
 .btn::before{
     content: '';
     position: absolute;
-    top: 0%;
-    left: 0%;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -83,34 +81,72 @@ span{
 }
 
 .btn1::before{
-    width: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    transform: scaley(0);
+    transform-origin: bottom;
+    transition: transform 250ms ease-in ;
 }
 .btn1:hover::before{
-    width: 100%;
+    transform: scaley(1);
+    transform-origin: top;
+
 }
 .btn2::before{
-    width: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in ;
 }
 .btn2:hover::before{
-    width: 100%;
+    transform: scaleX(1);
+    transform-origin: left
 }
 .btn3::before{
     width: 0;
+    height: 100%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
 .btn3:hover::before{
     width: 100%;
+
+
 }
 .btn4::before{
-    width: 0;
+    width: 100%;
+    height: 0;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%) rotate(-55deg);
+
 }
 .btn4:hover::before{
-    width: 100%;
+    height: 375%;
 }
 .btn5::before{
-    width: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    transform: scaley(0);
+    transform-origin: top;
+    transition: transform 250ms ease-in ;
 }
 .btn5:hover::before{
-    width: 100%;
+    transform: scaley(1);
+    transform-origin: bottom;
 }
 
 .container{
