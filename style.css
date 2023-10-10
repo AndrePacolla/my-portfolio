@@ -19,14 +19,16 @@
     --secund-purple: #6d1af3;
     --third-purple:#a01aee;
 }
-
+body{
+    overflow-x: hidden;
+}
 header{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     padding-top: 20px;
     font-family: 'Comfortaa', cursive;
-    background-color: var(--secund-black);
+    background: linear-gradient(to bottom , #313131 , #000000);
 }
 .portifolio{
     font-family: 'Russo One', sans-serif;
@@ -62,7 +64,9 @@ span{
     border-radius: 15px;
     overflow: hidden;
     z-index: 1;
-    border: 2px solid #6d1af3;
+    border: 3px solid #e7adf8;
+    border-left: transparent;
+    border-right: transparent;
     font-family: 'Russo One', sans-serif;
 }
 .btn a{
@@ -77,7 +81,7 @@ span{
     z-index: -1;
     border-radius: 15px;
     transition:  all .7s ease;
-    background-color: var(--secund-purple);
+    background-color: var(--third-purple);
 }
 
 .btn1::before{
@@ -149,6 +153,12 @@ span{
     transform-origin: bottom;
 }
 
+ul:has(li:hover) li:not(:hover) {
+    opacity: .4;
+    scale: .95;
+  }
+  
+
 .container{
     display: flex;
     max-width: 1440px;
@@ -172,11 +182,27 @@ span{
     font-size: 40px;
 }
 .banner-title h3{
-    letter-spacing: 10px;
+    width: 40ch;
+    white-space: nowrap;
+    overflow: hidden;
     margin-top: 10px;
     font-size: 15px;
+    border-right: 4px solid;
+    letter-spacing: 10px;
+    animation: typing 6s steps(40) infinite, blinking .5s  infinite  alternate;
 }
-
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    
+}
+@keyframes blinking{
+    50%{
+        border-color: transparent;
+    }
+    
+}
 .banner-bg{
     flex: 1;
 }
@@ -187,6 +213,7 @@ span{
 .about{
     width: 100vw;
     padding: 100px;
+    padding: 200px 0;
     background-color: var(--primary-black);
 }
 
