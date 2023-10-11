@@ -1,64 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> my portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="script.js" defer></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
-</head>
-<body>
-
- <header>
-    <div class="container">
-      <div class="portifolio">
-        <h2>Portfolio</h2>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="portifolio">
+          <h2>Portfolio</h2>
+        </div>
+        <nav>
+          <ul>
+            <li class="btn btn1" data-aos="fade-down" data-aos-delay="500">
+              <a href="#">Home</a>
+            </li>
+            <li class="btn btn2" data-aos="fade-up" data-aos-delay="700">
+              <a href="#">About</a>
+            </li>
+            <li class="btn btn3" data-aos="fade-down" data-aos-delay="900">
+              <a href="#">Service</a>
+            </li>
+            <li class="btn btn4" data-aos="fade-up" data-aos-delay="1100">
+              <a href="#">Skills</a>
+            </li>
+            <li class="btn btn5" data-aos="fade-left" data-aos-delay="1300">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li class="btn btn1" data-aos="fade-down" data-aos-delay="500"><a href="#">Home</a></li>
-          <li class="btn btn2" data-aos="fade-up" data-aos-delay="700"><a href="#">About</a></li>
-          <li class="btn btn3" data-aos="fade-down" data-aos-delay="900"><a href="#">Service</a></li>
-          <li class="btn btn4" data-aos="fade-up" data-aos-delay="1100"><a href="#">Skills</a></li>
-          <li class="btn btn5" data-aos="fade-left" data-aos-delay="1300"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="banner container">
-      <div class="banner-title">
+      <div class="banner container">
+        <div class="banner-title">
           <h1>André <span>Pacolla</span></h1>
           <h3>Developer Front End</h3>
+        </div>
+        <div class="banner-bg">
+          <img src="Projects/profession-bg.png" alt="" />
+        </div>
       </div>
-      <div class="banner-bg">
-           <img 
-           src="Projects/profession-bg.png"
-           alt="">
+    </header>
+
+    <main class="about">
+      <div class="container">
+        <div class="about-img">
+          <img
+            src="/assets/about3.png"
+            alt="photo-profile"
+            data-aos="flip-right"
+            data-aos-delay="700"
+          />
+        </div>
+        <div
+          class="about-description"
+          data-aos="zoom-in-left"
+          data-aos-delay="400"
+        >
+          <h1>Ab<span>out</span></h1>
+          <br />
+          <p>
+            Olá! Sou o André, tenho 27 anos, natural de Campinas-SP. Sou um
+            amante de tecnologia e tenho descoberto na programação o meu lugar.
+            Almejo iniciar minha carreira nesta área para construí-la fazendo
+            parte diretamente do crescimento e sucesso da empresa. Tenho
+            estudado e realizado projetos na área do <i>Front-end.</i>
+          </p>
+          <br />
+          <button>Entre em Contato</button>
+        </div>
       </div>
-    </div>
-</header>
-
-<main class=" about">
-  <div class="container">
-    <div class="about-img" >
-      <img src="/assets/about3.png" alt="photo-profile" data-aos="flip-right"  data-aos-delay="700">
-    </div>
-    <div class="about-description"  data-aos="zoom-in-left" data-aos-delay="500">
-      <h1>Ab<span>out</span></h1><br>
-      <p>Olá! Sou o André, tenho 27 anos, natural de Campinas-SP. Sou um amante de tecnologia e tenho descoberto na programação o meu lugar. Almejo iniciar minha carreira nesta área para construí-la fazendo parte diretamente do crescimento e sucesso da empresa.
-      Tenho estudado e realizado projetos na área do <i>Front-end.</i></p>
-      <br>
-      <button>Entre em Contato</button>
-    </div>
-  </div>
-</main>
-<section class="project">
-  <div class="project-area">
-
-  </div>
-
-</section>
-    
-</body>
+    </main>
+    <section class="project">
+      <div class="project-area"></div>
+    </section>
+  </body>
 </html>
