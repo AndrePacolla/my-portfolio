@@ -320,18 +320,24 @@ ul:has(li:hover) li:not(:hover) {
     text-align: center;
 }
 .card-description{
+    display: grid;
+    place-items: center;
     margin: 1rem;
     padding: 1rem;
     text-align: justify;
 }
 
 .card-description p {
+    text-align: justify;
+    line-height: 30px;
     color: var(--third-white);
 }
 
 .card-description a{
-    display: flex;
+    margin: 4rem;
+    padding: 1rem;
+    border-radius: 22px;
+    background-color: rgb(0, 119, 255);
     justify-content: center;
     text-decoration: none;
-    margin-top: 5rem;
 }
