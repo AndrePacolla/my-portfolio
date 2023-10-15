@@ -281,8 +281,9 @@ ul:has(li:hover) li:not(:hover) {
 }
 
 .project-area h2{
+  letter-spacing: 3px;
     margin-top: 6rem;
-    font-size: 2.2rem;
+    font-size: 2.7rem;
 }
 .project-slider{
     width: 100vw;
