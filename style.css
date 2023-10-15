@@ -9,6 +9,16 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--third-black);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--third-purple) ;
+}
 :root {
   --primary-black: #000;
   --secund-black: #111111;
