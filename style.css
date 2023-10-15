@@ -318,6 +318,7 @@ ul:has(li:hover) li:not(:hover) {
 }
 .card h2{
     margin: 1rem;
+    font-size: 30px;
     text-align: center;
 }
 .card-description{
