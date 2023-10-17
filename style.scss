@@ -7,6 +7,7 @@
   outline: 0;
   color: var(--primary-white);
   box-sizing: border-box;
+  text-decoration: none;
 }
 html{
   scroll-behavior: smooth;
@@ -279,6 +280,38 @@ ul:has(li:hover) li:not(:hover) {
   }
 }
 
+.about-skills{
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+  margin-top: 150px;
+  padding-left: 50px;
+  gap: 10px;
+}
+.about-skills h2{
+  font-size: 43px;
+  color: #b999ec;
+
+}
+.about-skills img{
+  width: 90px;
+}
+.about-skills-logo{
+  display: flex;
+  gap: 40px;
+  padding-left: 75px;
+}
+
+.about-skills-logo .logo{
+  transform: scale(1);
+  transition: all 1s ;
+  cursor: pointer;
+}
+.about-skills-logo .logo:hover{
+  transform: scale(1.2);
+  rotate:(360deg);
+}
+
 .project-section{
     width: 100vw;
     background: linear-gradient(to bottom , var(--primary-black), var(--secund-white));
@@ -377,4 +410,66 @@ ul:has(li:hover) li:not(:hover) {
   background: linear-gradient(150deg, #b68df8, #c81af3, #4802b8, #ae83f5);
   background-size: 400% 100%;
   animation: deg 8s linear infinite alternate;
+}
+footer{
+    width: 100%;
+    height: 40px;
+}
+
+.footer-wpp{
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  z-index: 99;
+}
+
+.btn-wpp{
+    transition: transform  .5s ease ;
+    width: 70px;
+}
+
+.btn-wpp:hover{
+    transform: scale(1.2);
+    }
+
+
+.tool-tip{
+    top: 0;
+    left: -170px;
+    visibility: hidden;
+    position: absolute;
+    font-family: "Comfortaa";
+    color: rgb(6, 255, 193);
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.footer-wpp:hover .tool-tip{
+    visibility: visible;
+    opacity: 1;
+}
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -100px;
+}
+.footer-contact-title h1{
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 100px;
+  color: var(--primary-black);
+}
+
+.footer-contact-img{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.footer-contact img{
+  width: 80px;
+  border-radius: 30%;
+
 }
