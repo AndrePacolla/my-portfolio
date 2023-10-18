@@ -302,18 +302,37 @@ ul:has(li:hover) li:not(:hover) {
     transform: scale(1.1);
   }
 }
+#skills {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
 .about-skills {
   display: flex;
   align-items: center;
-  margin-left: 3rem;
+  margin-left: -220px;
   margin-top: 150px;
   padding-left: 50px;
   gap: 10px;
 }
 
-.about-skills h2 {
+.about-skills-rash {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-skills-rash h2 {
   font-size: 43px;
   color: #b999ec;
+}
+
+.about-skills-rash .rash {
+  width: 75px;
 }
 
 .about-skills img {
