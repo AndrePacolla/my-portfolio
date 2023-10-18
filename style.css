@@ -523,4 +523,21 @@ footer {
 .footer-contact img {
   width: 80px;
   border-radius: 30%;
+}
+
+.fotter-copyright {
+  width: 100%;
+  margin: 3rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "Trebuchet MS";
+  color: var(--primary-black);
+}
+
+.copy {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 5px;
 }/*# sourceMappingURL=style.css.map */
