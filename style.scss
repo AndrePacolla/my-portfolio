@@ -70,6 +70,12 @@ header {
 span {
   color: var(--third-purple);
 }
+nav .menu-mobile{
+  width: 80px;
+  height: 80px;
+  z-index: 99;
+  background-color: red;
+}
 .btn {
   position: relative;
   display: inline-block;
@@ -505,4 +511,61 @@ footer{
   font-size: 17px;
   font-weight: bold;
   letter-spacing: 5px;
+}
+
+
+@media screen and (max-width: 600px){
+  .container{
+    flex-direction: column;
+
+    nav{
+      visibility: hidden;
+    }
+    .portifolio h2{
+      margin-top: 50px;
+      font-size: 27px;
+      text-align: center;
+      justify-content: center;
+    }
+    .banner-title h1{
+      margin-top: -170px;
+      font-size: 32px;
+    }
+    .banner-title h3{
+      letter-spacing: 4px;
+      font-size: 13px;
+    }
+    .banner-bg{
+      margin-right:100px ;
+      justify-content: center;
+      text-align: center;
+
+      img{
+        width: 500px;
+      }
+    }
+    .about-img {
+      width: 100%;
+      margin: 20px auto;
+      justify-content: center;
+      align-items: center;
+      margin-left: 30px;
+      
+      img{
+        max-width: 280px;
+      }
+    }
+    .about-description{
+      width: 100%;
+      margin: 30px auto;
+      justify-content: center;
+      align-items: center;
+
+
+      h1{
+        font-size: 34px;
+      }
+    }
+
+  } 
 }
