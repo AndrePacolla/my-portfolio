@@ -77,11 +77,32 @@ span {
   color: var(--third-purple);
 }
 
-nav .menu-mobile {
-  width: 80px;
-  height: 80px;
+.menu-faketrigger {
+  position: absolute;
+  opacity: 0;
   z-index: 99;
-  background-color: red;
+  top: 30px;
+  left: 25px;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.menu-lines {
+  position: absolute;
+  visibility: hidden;
+  left: 25px;
+  width: 35px;
+  height: 35px;
+}
+
+.menu-lines span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background-color: var(--third-purple);
 }
 
 .btn {
@@ -551,12 +572,45 @@ footer {
   .container {
     flex-direction: column;
   }
-  .container nav {
-    visibility: hidden;
+  .container nav ul {
+    display: flex;
+    width: 120px;
+    margin-left: -200px;
+    margin-top: 30px;
+    flex-direction: column;
+    transition: all ease 0.5s;
+  }
+  .container nav ul li {
+    margin-bottom: 15px;
+  }
+  .container .menu-faketrigger:checked ~ ul {
+    margin-left: 0px;
+  }
+  .container .menu-lines {
+    z-index: 0;
+    top: 35px;
+    visibility: visible;
+  }
+  .container .menu-faketrigger:checked ~ .menu-lines span {
+    background-color: var(--secund-white);
+    transition: all ease 0.3s;
+  }
+  .container .menu-faketrigger:checked ~ .menu-lines span:nth-child(1) {
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(1.25);
+  }
+  .container .menu-faketrigger:checked ~ .menu-lines span:nth-child(2) {
+    opacity: 0;
+  }
+  .container .menu-faketrigger:checked ~ .menu-lines span:nth-child(3) {
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(1.25);
   }
   .container .portifolio h2 {
-    margin-top: 50px;
-    font-size: 27px;
+    margin-top: 0px;
+    margin-left: 50px;
+    font-size: 30px;
+    letter-spacing: 11px;
     text-align: center;
     justify-content: center;
   }
