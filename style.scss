@@ -590,6 +590,10 @@ footer{
       text-align: center;
       justify-content: center;
     }
+
+    .banner-title{
+      min-width: 300px;
+    }
     .banner-title h1{
       margin-top: -170px;
       font-size: 32px;
@@ -599,6 +603,7 @@ footer{
       font-size: 13px;
     }
     .banner-bg{
+      margin-top: -50px;
       margin-right:100px ;
       justify-content: center;
       text-align: center;
