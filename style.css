@@ -619,10 +619,10 @@ footer {
     justify-content: center;
   }
   .container .banner-title {
-    min-width: 300px;
+    min-width: 280px;
   }
   .container .banner-title h1 {
-    margin-top: -170px;
+    margin-top: -140px;
     font-size: 32px;
   }
   .container .banner-title h3 {
