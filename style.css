@@ -439,6 +439,10 @@ ul:has(li:hover) li:not(:hover) {
   width: 160px;
 }
 
+.card .urna {
+  width: 140px;
+}
+
 .card h2 {
   margin: 1rem;
   font-size: 30px;
@@ -620,7 +624,7 @@ footer {
   }
   .container .banner-title {
     margin-top: -30px;
-    width: 280px;
+    width: 240px;
   }
   .container .banner-title h1 {
     margin-top: -140px;
